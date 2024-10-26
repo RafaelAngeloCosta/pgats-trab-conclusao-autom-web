@@ -1,0 +1,33 @@
+#nome que vai aparecer la nas opções de pipe
+name: "Execução manual E2E"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  # descrição do job
+  e2e-tests:
+    #maquina que o job vai executar
+    runs-on: ["ubuntu-latest"]
+
+    #passo a passo das ações do job
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Instalado Yarn
+        run: npm install -g yarn
+
+      - name: Instalado dependencias
+        run: npm cypress install
+
+      - name: Executar Yarn
+        run: yarn
+
+      - name: Testes E2E (end-to-end)
+        run: yarn run e2e
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled()}}
+        with:
+          name: relatorio-de-testes
+          path: ./cypress/report
