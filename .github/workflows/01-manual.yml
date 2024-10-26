@@ -18,7 +18,7 @@ jobs:
         run: npm install -g yarn
 
       - name: Instalado dependencias
-        run: npm cypress install
+        run: npm install --save-dev cypress
 
       - name: Executar Yarn
         run: yarn
