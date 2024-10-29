@@ -1,23 +1,22 @@
-Automação de testes Web utilizando Cypress.
+<h1>Automação de testes Web utilizando Cypress.</h1>
 
-Trabalho de entrega final:
+> Trabalho de entrega final
 
-1. Requisitos:
+### 1. Requisitos:
 
-Node.js e npm instalados.
-Cypress configurado.
++ Node.js e npm instalados.
++ Cypress configurado.
 
-2. Instalação:
-git clone https://github.com/RafaelAngeloCosta/pgats-trab-conclusao-autom-web
+### 2. Instalação:
++ git clone https://github.com/RafaelAngeloCosta/pgats-trab-conclusao-autom-web
 cd pgats-trab-conclusao-autom-web
-npm install
++ npm install
 
-3. Configuração do Cypress:
+### 3. Configuração do Cypress:
 
-Checar cypress.config.js para configurações específicas.
++ Checar cypress.config.js para configurações específicas.
 browserstack.json para integração com BrowserStack, se necessário.
 
-4. Execução dos Testes:
+### 4. Execução dos Testes:
 
-Rodar o Cypress com: npx cypress open ou npx cypress run.
-Essas informações podem ajudar a completar o README para facilitar a execução do projeto.
++ Rodar o Cypress com: npx cypress open ou npx cypress run.
