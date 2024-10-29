@@ -1,6 +1,6 @@
 <h1>Automação de testes Web utilizando Cypress.</h1>
 
-> Trabalho de entrega final
+> Trabalho de entrega final da Pós-Graduação - PGATS
 
 ### 1. Requisitos:
 
